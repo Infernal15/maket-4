@@ -1,0 +1,54 @@
+$main-menu-color: #f7f7f7;
+$background-color-1: #f7f7f7;
+$background-color-2: #fff;
+$background-color-3: #3c98db;
+$text-color-for-background-color-2: #000;
+$text-color-for-background-color-3: #fff;
+$button-color: #337ab7;
+$button-color-text: #fff;
+$burger-button: #337ab7;
+$shadow: rgba(101, 101, 101, 0.3);
+$text-color: #b4b4b4;
+
+@mixin button {
+    background-color: $button-color;
+    color: $button-color-text;
+    border: 1px solid $button-color;
+    border-radius: 20px;
+    padding: 0 19px;
+    &:hover {
+        background-color: #3c98db;
+        border-color: #3c98db;
+    }
+    &:active {
+        background-color: #274864;
+        border-color: #274864;
+    }
+}
+
+@mixin shadow($var) {
+    -webkit-box-shadow: 0px $var 8px 0px $shadow;
+    -moz-box-shadow: 0px $var 8px 0px $shadow;
+    box-shadow: 0px $var 8px 0px $shadow;
+}
+
+
+
+//Курс "Розробка сайтів"
+
+$develop-boreder-color: #3498db;
+$develop-description-color: #adadad;
+
+@mixin jsButton($name) {
+    margin-top: 100px;
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: center;
+    .back-button-#{$name} {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 7px;
+        cursor: pointer;
+    }
+}
