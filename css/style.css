@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Open Sans Condensed', sans-serif;
-  src: url("../../fonts/OpenSansCondensed-Light.woff") format("woff"); }
+  src: url("../fonts/OpenSansCondensed-Light.woff") format("woff"); }
 
 @font-face {
   font-family: 'Open Sans Light';
-  src: url("../../fonts/OpenSans-Light.ttf"); }
+  src: url("../fonts/OpenSans-Light.ttf"); }
 
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url("../../fonts/OpenSans-Bold.ttf"); }
+  src: url("../fonts/OpenSans-Bold.ttf"); }
 
 @font-face {
   font-family: 'Open Sans Regular';
-  src: url("../../fonts/OpenSans-Regular.ttf"); }
+  src: url("../fonts/OpenSans-Regular.ttf"); }
 
 @font-face {
   font-family: 'Open Sans SemiBold';
-  src: url("../../fonts/OpenSans-SemiBold.ttf"); }
+  src: url("../fonts/OpenSans-SemiBold.ttf"); }
 
 @font-face {
   font-family: 'RobotoCondensed Regular';
-  src: url("../../fonts/RobotoCondensed-Regular.ttf"); }
+  src: url("../fonts/RobotoCondensed-Regular.ttf"); }
 
 * {
   font-family: 'Open Sans Condensed', sans-serif;
