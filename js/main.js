@@ -382,14 +382,19 @@ function develop(){
                 }
             }
             else if (_third){
-                if(i % 3 == 0){
-                    $($(".develop-block").get(i)).css('grid-area', '1 / 1 / 2 / 2');
+                if ($(".develop-block").length == 3){
+                    if(i % 3 == 0){
+                        $($(".develop-block").get(i)).css('grid-area', '1 / 1 / 2 / 2');
+                    }
+                    else if (i % 3 == 1){
+                        $($(".develop-block").get(i)).css('grid-area', '1 / 2 / 2 / 3');
+                    }
+                    else if (i % 3 == 2){
+                        $($(".develop-block").get(i)).css('grid-area', '1 / 3 / 2 / 4');
+                    }
                 }
-                else if (i % 3 == 1){
-                    $($(".develop-block").get(i)).css('grid-area', '1 / 2 / 2 / 3');
-                }
-                else if (i % 3 == 2){
-                    $($(".develop-block").get(i)).css('grid-area', '1 / 3 / 2 / 4');
+                else {
+                    $("#develop-content").css('display', 'flex')
                 }
             }
         })
