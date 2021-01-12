@@ -1,5 +1,5 @@
 * {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -102,7 +102,7 @@ header {
                     li:last-child {
                         @include button;
                         a {
-                            font-family: 'Open Sans Regular';
+                            font-family: 'Open Sans';
                             letter-spacing: 0.017em;
                             margin-bottom: 13px;
                             text-decoration: none;
@@ -235,7 +235,7 @@ header {
                     align-items: center;
                     & > p {
                         line-height: 7px;
-                        font-family: 'Open Sans Regular';
+                        font-family: 'Open Sans';
                         font-size: 13px;
                     }
                 }
@@ -273,7 +273,7 @@ header {
             line-height: 1.5em;
             font-size: 22px;
             text-align: center;
-            font-family: 'Open Sans Regular';
+            font-family: 'Open Sans';
         }
         #develop-content {
             display: flex;

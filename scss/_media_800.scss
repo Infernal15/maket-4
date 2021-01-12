@@ -29,8 +29,9 @@
                         justify-content: flex-end;
                         align-items: center;
                         row-gap: 3.7852%;
+                        margin-top: 1px;
                         li {
-                            padding: 0 1.775%;
+                            padding: 0 1.875%;
                         }
                         li:not(#unuse):hover {
                             background-color: #eee;
@@ -56,7 +57,7 @@
                 }}
         }
         .main-form {
-            margin-top: 100px;
+            margin-top: 103px;
             & > div {
                 max-width: 1220px;
                 margin: auto;
@@ -72,7 +73,7 @@
                     .main-form-title {
                         font-size: 32px;
                         letter-spacing: 0.037em;
-                        margin-bottom: 20px;
+                        margin-bottom: 18px;
                     }
                     .main-form-description {
                         width: 87%;
@@ -109,11 +110,18 @@
                             padding-top: 2px;
                         }
                     }.form-checkbox {
-                        margin-top: 14.5px;
+                        margin-top: 12.5px;
+                        #checkbox {
+                            margin-right: 7px;
+                        }
+                        & > p {
+                            font-size: 14px;
+                        }
+                        margin-bottom: 2px;
                     }
                     button {
                         padding: 15px 95px;
-                        margin-left: 6px;
+                        margin-left: 5px;
                     }
                 }
             }
@@ -145,27 +153,29 @@
                     }
                     .develop-title {
                         margin-top: -1px;
-                        padding-bottom: 15px;
+                        padding-bottom: 14px;
                         width: max-content;
                         & > p {
                             width: auto;
                             font-size: 19px;
-                            letter-spacing: 0.055em;
+                            margin-top: 17px;
+                            padding-bottom: 4px;
                         }
                     }
                     .develop-description {
-                        width: 95%;
+                        width: 99%;
                         padding-top: 27px;
                         font-size: 15px;
                         line-height: 1.67em;
+                        letter-spacing: 0.03em;
                         margin: 0;
                         margin-top: 2px;
-                    }
+                    }  
                 }
             }
             #develop-button {
-                margin-top: 58px;
-                margin-bottom: 58px;
+                margin-top: 46px;
+                margin-bottom: 45px;
             }
         }
     }
@@ -290,12 +300,13 @@
             margin: auto;
             .video-title {
                 font-size: 33px;
-                margin-top: 70px;
+                margin-top: 66px;
                 letter-spacing: 0.025em;
             }
             .video-description {
                 font-size: 18px;
                 line-height: 1.38em;
+                margin-top: 20px;
             }
             iframe {
                 margin-top: 30px;
@@ -309,10 +320,12 @@
         .mentor-content {
             max-width: 1220px;
             margin: auto;
-            .mentor-main-title {
-                margin-top: 35px;
+            padding-top: 35px;
+            > .mentor-main-title {
+                margin-top: 33px;
                 font-size: 31px;
                 letter-spacing: 0.085em;
+                padding-left: -1px;
             }
             #mentor-content{
                 display: flex;
@@ -331,14 +344,14 @@
                         height: 356px;
                         margin-top: 1px;
                     }
-                    & > div {
-                        & > p:first-child + p {
+                    > div {
+                        > p:first-child + p {
                             margin-top: 30px;
                         }
-                        & > p {
+                        > p {
                             text-align: left;
                             font-size: 16px;
-                            letter-spacing: -0.001em;
+                            letter-spacing: -0.027em;
                             line-height: 1.59em;
                         }
                         .mentor-name {

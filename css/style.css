@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans';
   src: url("../fonts/OpenSans-Regular.ttf"); }
 
 @font-face {
@@ -11,10 +11,6 @@
   src: url("../fonts/OpenSans-Bold.ttf"); }
 
 @font-face {
-  font-family: 'Open Sans Regular';
-  src: url("../fonts/OpenSans-Regular.ttf"); }
-
-@font-face {
   font-family: 'Open Sans SemiBold';
   src: url("../fonts/OpenSans-SemiBold.ttf"); }
 
@@ -23,7 +19,7 @@
   src: url("../fonts/RobotoCondensed-Regular.ttf"); }
 
 * {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -123,7 +119,7 @@ header menu {
             background-color: #274864;
             border-color: #274864; }
           header menu > div .menu-list ul li:last-child a {
-            font-family: 'Open Sans Regular';
+            font-family: 'Open Sans';
             letter-spacing: 0.017em;
             margin-bottom: 13px;
             text-decoration: none;
@@ -226,7 +222,7 @@ header .main-form {
         align-items: center; }
         header .main-form div .form .form-checkbox > p {
           line-height: 7px;
-          font-family: 'Open Sans Regular';
+          font-family: 'Open Sans';
           font-size: 13px; }
       header .main-form div .form button {
         background-color: #337ab7;
@@ -265,7 +261,7 @@ header .main-form {
       line-height: 1.5em;
       font-size: 22px;
       text-align: center;
-      font-family: 'Open Sans Regular'; }
+      font-family: 'Open Sans'; }
     .develop > .develop-precontent #develop-content {
       display: flex;
       position: relative;
@@ -602,9 +598,10 @@ map > iframe {
           flex-direction: row;
           justify-content: flex-end;
           align-items: center;
-          row-gap: 3.7852%; }
+          row-gap: 3.7852%;
+          margin-top: 1px; }
           header menu div .menu-list ul li {
-            padding: 0 1.775%; }
+            padding: 0 1.875%; }
           header menu div .menu-list ul li:not(#unuse):hover {
             background-color: #eee; }
             header menu div .menu-list ul li:not(#unuse):hover a {
@@ -621,7 +618,7 @@ map > iframe {
             padding: 0 17.5px;
             pointer-events: stroke; }
   header .main-form {
-    margin-top: 100px; }
+    margin-top: 103px; }
     header .main-form > div {
       max-width: 1220px;
       margin: auto;
@@ -637,7 +634,7 @@ map > iframe {
         header .main-form > div > div .main-form-title {
           font-size: 32px;
           letter-spacing: 0.037em;
-          margin-bottom: 20px; }
+          margin-bottom: 18px; }
         header .main-form > div > div .main-form-description {
           width: 87%;
           font-size: 17px;
@@ -668,10 +665,15 @@ map > iframe {
             padding-left: 15px;
             padding-top: 2px; }
         header .main-form > div > .form .form-checkbox {
-          margin-top: 14.5px; }
+          margin-top: 12.5px;
+          margin-bottom: 2px; }
+          header .main-form > div > .form .form-checkbox #checkbox {
+            margin-right: 7px; }
+          header .main-form > div > .form .form-checkbox > p {
+            font-size: 14px; }
         header .main-form > div > .form button {
           padding: 15px 95px;
-          margin-left: 6px; } }
+          margin-left: 5px; } }
 
 @media screen and (min-width: 851px) {
   .develop > .develop-precontent > p {
@@ -693,22 +695,24 @@ map > iframe {
         margin-left: 2px; }
       .develop > .develop-precontent #develop-content .develop-block .develop-title {
         margin-top: -1px;
-        padding-bottom: 15px;
+        padding-bottom: 14px;
         width: max-content; }
         .develop > .develop-precontent #develop-content .develop-block .develop-title > p {
           width: auto;
           font-size: 19px;
-          letter-spacing: 0.055em; }
+          margin-top: 17px;
+          padding-bottom: 4px; }
       .develop > .develop-precontent #develop-content .develop-block .develop-description {
-        width: 95%;
+        width: 99%;
         padding-top: 27px;
         font-size: 15px;
         line-height: 1.67em;
+        letter-spacing: 0.03em;
         margin: 0;
         margin-top: 2px; }
   .develop > .develop-precontent #develop-button {
-    margin-top: 58px;
-    margin-bottom: 58px; } }
+    margin-top: 46px;
+    margin-bottom: 45px; } }
 
 @media screen and (min-width: 852px) {
   .develop > .develop-precontent #develop-content .develop-block .develop-title {
@@ -788,22 +792,25 @@ map > iframe {
     margin: auto; }
     .video .video-content .video-title {
       font-size: 33px;
-      margin-top: 70px;
+      margin-top: 66px;
       letter-spacing: 0.025em; }
     .video .video-content .video-description {
       font-size: 18px;
-      line-height: 1.38em; }
+      line-height: 1.38em;
+      margin-top: 20px; }
     .video .video-content iframe {
       margin-top: 30px; } }
 
 @media screen and (min-width: 851px) {
   .mentors .mentor-content {
     max-width: 1220px;
-    margin: auto; }
-    .mentors .mentor-content .mentor-main-title {
-      margin-top: 35px;
+    margin: auto;
+    padding-top: 35px; }
+    .mentors .mentor-content > .mentor-main-title {
+      margin-top: 33px;
       font-size: 31px;
-      letter-spacing: 0.085em; }
+      letter-spacing: 0.085em;
+      padding-left: -1px; }
     .mentors .mentor-content #mentor-content {
       display: flex;
       align-items: center;
@@ -825,7 +832,7 @@ map > iframe {
         .mentors .mentor-content #mentor-content .mentor > div > p {
           text-align: left;
           font-size: 16px;
-          letter-spacing: -0.001em;
+          letter-spacing: -0.027em;
           line-height: 1.59em; }
         .mentors .mentor-content #mentor-content .mentor > div .mentor-name {
           text-align: left;
