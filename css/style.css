@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Open Sans Condensed', sans-serif;
-  src: url("../fonts/OpenSansCondensed-Light.woff") format("woff"); }
+  src: url("../fonts/OpenSans-Regular.ttf"); }
 
 @font-face {
   font-family: 'Open Sans Light';
@@ -252,110 +252,13 @@ header .main-form {
           background-color: #274864;
           border-color: #274864; }
 
-@media screen and (min-width: 851px) {
-  header menu {
-    height: 100px;
-    padding-top: 11px; }
-    header menu div {
-      margin: auto;
-      display: grid;
-      grid-template-columns: 84px 1fr;
-      max-width: 1220px;
-      padding: 0; }
-      header menu div img {
-        width: 80px;
-        height: 80px; }
-      header menu div .burger-but {
-        display: none; }
-      header menu div .menu-list {
-        position: inherit;
-        top: 0;
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex; }
-        header menu div .menu-list ul {
-          width: 100%;
-          flex-direction: row;
-          justify-content: flex-end;
-          align-items: center;
-          row-gap: 3.7852%; }
-          header menu div .menu-list ul li {
-            padding: 0 1.775%; }
-          header menu div .menu-list ul li:not(#unuse):hover {
-            background-color: #eee; }
-            header menu div .menu-list ul li:not(#unuse):hover a {
-              color: #337ab7; }
-          header menu div .menu-list ul li:not(#unuse) {
-            margin-bottom: 0; }
-            header menu div .menu-list ul li:not(#unuse) a {
-              width: 100%;
-              height: 100%;
-              text-align: initial; }
-          header menu div .menu-list ul li:last-child {
-            margin-bottom: 1px;
-            height: 40px;
-            padding: 0 17.5px;
-            pointer-events: stroke; }
-  header .main-form {
-    margin-top: 100px; }
-    header .main-form > div {
-      max-width: 1220px;
-      margin: auto;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 150px 215.5px auto;
-      padding-top: 25px; }
-      header .main-form > div > div {
-        grid-area: 2 / 1 / 4 / 2;
-        display: flex;
-        flex-direction: column; }
-        header .main-form > div > div .main-form-title {
-          font-size: 32px;
-          letter-spacing: 0.037em;
-          margin-bottom: 20px; }
-        header .main-form > div > div .main-form-description {
-          width: 87%;
-          font-size: 17px;
-          letter-spacing: 0.03em;
-          line-height: 1.9em; }
-      header .main-form > div > .form {
-        margin-top: 0;
-        padding-right: 0;
-        grid-area: 1 / 2 / 4 / 3; }
-        header .main-form > div > .form .form-title {
-          text-align: left;
-          margin-left: 5px;
-          margin-top: 10px; }
-        header .main-form > div > .form > div {
-          margin-left: 5px; }
-          header .main-form > div > .form > div #name,
-          header .main-form > div > .form > div #surname,
-          header .main-form > div > .form > div #type,
-          header .main-form > div > .form > div #phone,
-          header .main-form > div > .form > div #email {
-            height: 52px; }
-          header .main-form > div > .form > div #name:placeholder-shown,
-          header .main-form > div > .form > div #surname:placeholder-shown,
-          header .main-form > div > .form > div #type:placeholder-shown,
-          header .main-form > div > .form > div #phone:placeholder-shown,
-          header .main-form > div > .form > div #email:placeholder-shown {
-            padding-left: 15px;
-            padding-top: 2px; }
-        header .main-form > div > .form .form-checkbox {
-          margin-top: 14.5px; }
-          header .main-form > div > .form .form-checkbox #checkbox {
-            margin-top: 0; }
-          header .main-form > div > .form .form-checkbox > p {
-            font-size: 14px;
-            margin-top: 0; }
-        header .main-form > div > .form button {
-          padding: 15px 95px;
-          margin-left: 6px; } }
-
 .develop {
   width: 100%; }
   .develop > .develop-precontent {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding: 0 15px; }
     .develop > .develop-precontent > p {
       margin-top: 65px;
       letter-spacing: 0.044em;
@@ -413,83 +316,6 @@ header .main-form {
         margin: 0 7px;
         cursor: pointer; }
 
-@media screen and (min-width: 601px) {
-  .develop > .develop-precontent > p {
-    font-size: 26.5px; }
-  .develop > .develop-precontent #develop-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    padding: 0 15px; } }
-
-@media screen and (min-width: 851px) {
-  .develop > .develop-precontent > p {
-    font-size: 31px; }
-  .develop > .develop-precontent #develop-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: -12px;
-    column-gap: 5px;
-    padding: 0 15px;
-    margin-top: 20px;
-    margin-left: 2px; }
-    .develop > .develop-precontent #develop-content .develop-block {
-      width: auto;
-      width: auto;
-      margin-top: 0; }
-      .develop > .develop-precontent #develop-content .develop-block img {
-        margin-top: 12px;
-        margin-left: 2px; }
-      .develop > .develop-precontent #develop-content .develop-block .develop-title {
-        margin-top: -1px;
-        padding-bottom: 15px;
-        width: max-content; }
-        .develop > .develop-precontent #develop-content .develop-block .develop-title > p {
-          width: auto;
-          font-size: 19px;
-          letter-spacing: 0.055em; }
-      .develop > .develop-precontent #develop-content .develop-block .develop-description {
-        width: 95%;
-        padding-top: 27px;
-        font-size: 15px;
-        line-height: 1.67em;
-        margin: 0;
-        margin-top: 2px; }
-  .develop > .develop-precontent #develop-button {
-    margin-top: 58px;
-    margin-bottom: 58px; } }
-
-@media screen and (min-width: 852px) {
-  .develop > .develop-precontent #develop-content .develop-block .develop-title {
-    width: 100%; }
-    .develop > .develop-precontent #develop-content .develop-block .develop-title > p {
-      font-size: 18px; } }
-
-@media screen and (min-width: 1168px) {
-  .develop > .develop-precontent {
-    max-width: 1220px;
-    padding: 0 15px;
-    margin: auto; }
-    .develop > .develop-precontent #develop-content {
-      padding: 0; }
-      .develop > .develop-precontent #develop-content .develop-block {
-        max-width: 350px; }
-        .develop > .develop-precontent #develop-content .develop-block .develop-title {
-          width: max-content; }
-          .develop > .develop-precontent #develop-content .develop-block .develop-title > p {
-            font-size: 22px; }
-      .develop > .develop-precontent #develop-content .develop-block:nth-child(3n+1) {
-        margin-left: auto; }
-      .develop > .develop-precontent #develop-content .develop-block:nth-child(3n+2) {
-        margin-left: auto;
-        margin-right: auto; } }
-
-@media screen and (min-width: 1204px) {
-  .develop-block {
-    margin: 0; }
-    .develop-block .develop-title > p {
-      font-size: 22.5px; } }
-
 .conducted {
   width: 100%;
   background-color: #3c98db;
@@ -498,14 +324,14 @@ header .main-form {
   justify-content: center;
   padding-top: 30px; }
   .conducted div {
-    max-width: 93.75%;
     width: 100%;
     max-height: 265px;
     height: auto;
     display: grid;
     grid-template-columns: 47.33% 53.67%;
     grid-template-rows: repeat(2, 1fr);
-    align-items: center; }
+    align-items: center;
+    padding: 0 15px; }
     .conducted div div {
       width: auto;
       height: 122px;
@@ -534,39 +360,8 @@ header .main-form {
     .conducted div div:nth-child(2n + 1) img, .conducted div div:nth-child(2n + 1) p {
       margin-left: 10px; }
 
-@media screen and (min-width: 851px) {
-  .conducted {
-    height: 310px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0; }
-    .conducted div {
-      max-width: 1260px;
-      padding: 0 15px;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: min-content;
-      margin-left: -2px; }
-      .conducted div div {
-        height: auto;
-        margin: 0;
-        flex-grow: 1;
-        flex-basis: min-content; }
-        .conducted div div .conducted-count {
-          font-size: 27px;
-          padding-top: 15px; }
-        .conducted div div p:last-child {
-          font-size: 16px;
-          margin-top: 10px; }
-    .conducted div:nth-child(4n + 2) {
-      margin-left: 4px; }
-    .conducted div:nth-child(4n + 3) {
-      margin-left: -9px; }
-    .conducted div:nth-child(4n) {
-      margin-left: -4px; } }
-
 .students-block .students-block-div {
+  padding: 0 15px;
   padding-top: 31px; }
   .students-block .students-block-div .student-title {
     padding: 0  30px;
@@ -622,40 +417,6 @@ header .main-form {
       margin: 0 7px;
       cursor: pointer; }
 
-@media screen and (min-width: 851px) {
-  .students-block {
-    max-width: 1220px;
-    margin: auto; }
-    .students-block .students-block-div .student-title {
-      margin-top: 34px;
-      font-size: 31px;
-      letter-spacing: 0.076em; }
-    .students-block .students-block-div .all-students {
-      margin: auto;
-      max-width: 1060px; }
-      .students-block .students-block-div .all-students .student div .student-description {
-        font-size: 20px;
-        margin-top: 16px;
-        width: 100%;
-        line-height: 1.85em;
-        letter-spacing: 0.048em; }
-      .students-block .students-block-div .all-students .student div .quo {
-        font-size: 30px;
-        color: #c4c4c4;
-        font-family: FontAwesome; }
-      .students-block .students-block-div .all-students .student div .quo:last-child {
-        margin-bottom: 2px; }
-      .students-block .students-block-div .all-students .student .student-name {
-        margin-top: 29px;
-        font-size: 19px;
-        letter-spacing: 0.07em; }
-      .students-block .students-block-div .all-students .student .student-role {
-        margin-top: 1px;
-        font-size: 16px; }
-    .students-block .students-block-div #student-button {
-      margin-top: 122px;
-      margin-bottom: 40px; } }
-
 .video {
   background-color: #f7f7f7; }
   .video .video-content {
@@ -686,20 +447,6 @@ header .main-form {
       width: 100%;
       margin-top: 29px;
       margin-bottom: 65px; }
-
-@media screen and (min-width: 851px) {
-  .video .video-content {
-    max-width: 1220px;
-    margin: auto; }
-    .video .video-content .video-title {
-      font-size: 33px;
-      margin-top: 70px;
-      letter-spacing: 0.025em; }
-    .video .video-content .video-description {
-      font-size: 18px;
-      line-height: 1.38em; }
-    .video .video-content iframe {
-      margin-top: 30px; } }
 
 .mentors {
   background-color: #fff; }
@@ -756,6 +503,299 @@ header .main-form {
         margin: 0 7px;
         cursor: pointer; }
 
+map > iframe {
+  margin-bottom: -5px;
+  width: 100%; }
+
+.info {
+  background-color: #3498db; }
+  .info .info-content {
+    padding: 40px 15px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+    height: 267px; }
+    .info .info-content .info-content-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .info .info-content .info-content-desc img {
+        width: 39px;
+        height: 36px;
+        margin-bottom: 9px; }
+      .info .info-content .info-content-desc > p, .info .info-content .info-content-desc > a {
+        color: #fff; }
+      .info .info-content .info-content-desc .info-name {
+        font-size: 15px;
+        margin-bottom: 3px;
+        font-family: 'Open Sans SemiBold';
+        text-decoration: none; }
+      .info .info-content .info-content-desc .info-desc {
+        font-size: 13px;
+        letter-spacing: -0.03em;
+        font-family: 'Open Sans Light';
+        text-decoration: none; }
+
+.copy {
+  background-color: #f7f7f7; }
+  .copy .copy-content {
+    min-height: 111px;
+    max-height: 156px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px; }
+    .copy .copy-content > p {
+      color: #3498db;
+      margin-bottom: 10px; }
+    .copy .copy-content > a {
+      color: #555;
+      text-decoration: none; }
+    .copy .copy-content > a, .copy .copy-content > p {
+      font-family: 'Open Sans Light';
+      font-size: 14px; }
+
+@media screen and (min-width: 352px) {
+  header .main-form > div > .form .form-checkbox #checkbox {
+    margin-top: 2px; }
+  header .main-form > div > .form .form-checkbox > p {
+    font-size: 14px;
+    margin-top: -1px; } }
+
+@media screen and (min-width: 601px) {
+  .develop > .develop-precontent > p {
+    font-size: 26.5px; }
+  .develop > .develop-precontent #develop-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    padding: 0 15px; } }
+
+@media screen and (min-width: 851px) {
+  header menu {
+    height: 100px;
+    padding-top: 11px; }
+    header menu div {
+      margin: auto;
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      max-width: 1220px;
+      padding: 0 15px; }
+      header menu div img {
+        width: 80px;
+        height: 80px;
+        margin-left: -15px; }
+      header menu div .burger-but {
+        display: none; }
+      header menu div .menu-list {
+        position: inherit;
+        top: 0;
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        margin-right: -30px; }
+        header menu div .menu-list ul {
+          width: 100%;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          row-gap: 3.7852%; }
+          header menu div .menu-list ul li {
+            padding: 0 1.775%; }
+          header menu div .menu-list ul li:not(#unuse):hover {
+            background-color: #eee; }
+            header menu div .menu-list ul li:not(#unuse):hover a {
+              color: #337ab7; }
+          header menu div .menu-list ul li:not(#unuse) {
+            margin-bottom: 0; }
+            header menu div .menu-list ul li:not(#unuse) a {
+              width: 100%;
+              height: 100%;
+              text-align: initial; }
+          header menu div .menu-list ul li:last-child {
+            margin-bottom: 1px;
+            height: 40px;
+            padding: 0 17.5px;
+            pointer-events: stroke; }
+  header .main-form {
+    margin-top: 100px; }
+    header .main-form > div {
+      max-width: 1220px;
+      margin: auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 150px 215.5px auto;
+      padding: 0 15px;
+      padding-top: 25px; }
+      header .main-form > div > div {
+        grid-area: 2 / 1 / 4 / 2;
+        display: flex;
+        flex-direction: column;
+        margin-left: -15px; }
+        header .main-form > div > div .main-form-title {
+          font-size: 32px;
+          letter-spacing: 0.037em;
+          margin-bottom: 20px; }
+        header .main-form > div > div .main-form-description {
+          width: 87%;
+          font-size: 17px;
+          letter-spacing: 0.03em;
+          line-height: 1.9em; }
+      header .main-form > div > .form {
+        margin-top: 0;
+        padding-right: 0;
+        grid-area: 1 / 2 / 4 / 3;
+        margin-right: -15px; }
+        header .main-form > div > .form .form-title {
+          text-align: left;
+          margin-left: 5px;
+          margin-top: 10px; }
+        header .main-form > div > .form > div {
+          margin-left: 5px; }
+          header .main-form > div > .form > div #name,
+          header .main-form > div > .form > div #surname,
+          header .main-form > div > .form > div #type,
+          header .main-form > div > .form > div #phone,
+          header .main-form > div > .form > div #email {
+            height: 52px; }
+          header .main-form > div > .form > div #name:placeholder-shown,
+          header .main-form > div > .form > div #surname:placeholder-shown,
+          header .main-form > div > .form > div #type:placeholder-shown,
+          header .main-form > div > .form > div #phone:placeholder-shown,
+          header .main-form > div > .form > div #email:placeholder-shown {
+            padding-left: 15px;
+            padding-top: 2px; }
+        header .main-form > div > .form .form-checkbox {
+          margin-top: 14.5px; }
+        header .main-form > div > .form button {
+          padding: 15px 95px;
+          margin-left: 6px; } }
+
+@media screen and (min-width: 851px) {
+  .develop > .develop-precontent > p {
+    font-size: 31px; }
+  .develop > .develop-precontent #develop-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -12px;
+    column-gap: 5px;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-left: 2px; }
+    .develop > .develop-precontent #develop-content .develop-block {
+      width: auto;
+      width: auto;
+      margin-top: 0; }
+      .develop > .develop-precontent #develop-content .develop-block img {
+        margin-top: 12px;
+        margin-left: 2px; }
+      .develop > .develop-precontent #develop-content .develop-block .develop-title {
+        margin-top: -1px;
+        padding-bottom: 15px;
+        width: max-content; }
+        .develop > .develop-precontent #develop-content .develop-block .develop-title > p {
+          width: auto;
+          font-size: 19px;
+          letter-spacing: 0.055em; }
+      .develop > .develop-precontent #develop-content .develop-block .develop-description {
+        width: 95%;
+        padding-top: 27px;
+        font-size: 15px;
+        line-height: 1.67em;
+        margin: 0;
+        margin-top: 2px; }
+  .develop > .develop-precontent #develop-button {
+    margin-top: 58px;
+    margin-bottom: 58px; } }
+
+@media screen and (min-width: 852px) {
+  .develop > .develop-precontent #develop-content .develop-block .develop-title {
+    width: 100%; }
+    .develop > .develop-precontent #develop-content .develop-block .develop-title > p {
+      font-size: 18px; } }
+
+@media screen and (min-width: 851px) {
+  .conducted {
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0; }
+    .conducted div {
+      max-width: 1260px;
+      padding: 0 15px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: min-content;
+      margin-left: -2px; }
+      .conducted div div {
+        height: auto;
+        margin: 0;
+        flex-grow: 1;
+        flex-basis: min-content; }
+        .conducted div div .conducted-count {
+          font-size: 27px;
+          padding-top: 15px; }
+        .conducted div div p:last-child {
+          font-size: 16px;
+          margin-top: 10px; }
+    .conducted div:nth-child(4n + 2) {
+      margin-left: 4px; }
+    .conducted div:nth-child(4n + 3) {
+      margin-left: -9px; }
+    .conducted div:nth-child(4n) {
+      margin-left: -4px; } }
+
+@media screen and (min-width: 851px) {
+  .students-block {
+    max-width: 1220px;
+    margin: auto; }
+    .students-block .students-block-div .student-title {
+      margin-top: 34px;
+      font-size: 31px;
+      letter-spacing: 0.076em; }
+    .students-block .students-block-div .all-students {
+      margin: auto;
+      max-width: 1060px; }
+      .students-block .students-block-div .all-students .student div .student-description {
+        font-size: 20px;
+        margin-top: 16px;
+        width: 100%;
+        line-height: 1.85em;
+        letter-spacing: 0.048em; }
+      .students-block .students-block-div .all-students .student div .quo {
+        font-size: 30px;
+        color: #c4c4c4;
+        font-family: FontAwesome; }
+      .students-block .students-block-div .all-students .student div .quo:last-child {
+        margin-bottom: 2px; }
+      .students-block .students-block-div .all-students .student .student-name {
+        margin-top: 29px;
+        font-size: 19px;
+        letter-spacing: 0.07em; }
+      .students-block .students-block-div .all-students .student .student-role {
+        margin-top: 1px;
+        font-size: 16px; }
+    .students-block .students-block-div #student-button {
+      margin-top: 122px;
+      margin-bottom: 40px; } }
+
+@media screen and (min-width: 851px) {
+  .video .video-content {
+    max-width: 1220px;
+    margin: auto; }
+    .video .video-content .video-title {
+      font-size: 33px;
+      margin-top: 70px;
+      letter-spacing: 0.025em; }
+    .video .video-content .video-description {
+      font-size: 18px;
+      line-height: 1.38em; }
+    .video .video-content iframe {
+      margin-top: 30px; } }
+
 @media screen and (min-width: 851px) {
   .mentors .mentor-content {
     max-width: 1220px;
@@ -796,40 +836,6 @@ header .main-form {
       margin-top: 7px;
       margin-bottom: 65px; } }
 
-map > iframe {
-  margin-bottom: -5px;
-  width: 100%; }
-
-.info {
-  background-color: #3498db; }
-  .info .info-content {
-    padding: 40px 15px;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 50% 50%;
-    row-gap: 20px;
-    height: 267px; }
-    .info .info-content .info-content-desc {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .info .info-content .info-content-desc img {
-        width: 39px;
-        height: 36px;
-        margin-bottom: 9px; }
-      .info .info-content .info-content-desc > p, .info .info-content .info-content-desc > a {
-        color: #fff; }
-      .info .info-content .info-content-desc .info-name {
-        font-size: 15px;
-        margin-bottom: 3px;
-        font-family: 'Open Sans SemiBold';
-        text-decoration: none; }
-      .info .info-content .info-content-desc .info-desc {
-        font-size: 13px;
-        letter-spacing: -0.03em;
-        font-family: 'Open Sans Light';
-        text-decoration: none; }
-
 @media screen and (min-width: 851px) {
   .info {
     height: 197px;
@@ -839,7 +845,7 @@ map > iframe {
     justify-content: center; }
     .info .info-content {
       max-width: 1220px;
-      padding: 0;
+      padding: 0 15px;
       grid-template-columns: repeat(4, 1fr);
       height: auto;
       row-gap: none;
@@ -853,28 +859,11 @@ map > iframe {
         letter-spacing: -0.03em;
         font-family: 'Open Sans Bold'; }
       .info .info-content .info-content-desc .info-desc {
-        font-size: 15px; } }
-
-.copy {
-  background-color: #f7f7f7; }
-  .copy .copy-content {
-    min-height: 111px;
-    max-height: 156px;
-    width: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .copy .copy-content > p {
-      color: #3498db;
-      margin-bottom: 10px; }
-    .copy .copy-content > a {
-      color: #555;
-      text-decoration: none; }
-    .copy .copy-content > a, .copy .copy-content > p {
-      font-family: 'Open Sans Light';
-      font-size: 14px; }
+        font-size: 15px; }
+      .info .info-content .info-content-desc:first-child > * {
+        margin-left: -18px; }
+      .info .info-content .info-content-desc:last-child > * {
+        margin-right: -18px; } }
 
 @media screen and (min-width: 851px) {
   .copy {
@@ -890,3 +879,28 @@ map > iframe {
         margin-bottom: 18px; }
       .copy .copy-content > p::first-letter {
         padding-right: 5px; } }
+
+@media screen and (min-width: 1168px) {
+  .develop > .develop-precontent {
+    max-width: 1220px;
+    padding: 0 15px;
+    margin: auto; }
+    .develop > .develop-precontent #develop-content {
+      padding: 0; }
+      .develop > .develop-precontent #develop-content .develop-block {
+        max-width: 350px; }
+        .develop > .develop-precontent #develop-content .develop-block .develop-title {
+          width: max-content; }
+          .develop > .develop-precontent #develop-content .develop-block .develop-title > p {
+            font-size: 22px; }
+      .develop > .develop-precontent #develop-content .develop-block:nth-child(3n+1) {
+        margin-left: auto; }
+      .develop > .develop-precontent #develop-content .develop-block:nth-child(3n+2) {
+        margin-left: auto;
+        margin-right: auto; } }
+
+@media screen and (min-width: 1204px) {
+  .develop-block {
+    margin: 0; }
+    .develop-block .develop-title > p {
+      font-size: 22.5px; } }

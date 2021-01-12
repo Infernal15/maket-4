@@ -252,7 +252,7 @@ function max_height(){
         }
     }
     else if (window.screen.width > 600){
-        $('#develop-content').css('width', max*2);
+        $('#develop-content').css('width', max*2 + 41);
     }
     else{
         $('#develop-content').css('width', '100%');
@@ -261,6 +261,20 @@ function max_height(){
 }
 
 function content_height(find_in, set_in){
+    if (set_in == '#develop-content' && window.screen.width > 1300)
+    {
+        $(set_in).css('column-gap', '70px');
+    }
+    else if (set_in == '#develop-content' && window.screen.width > 1168)
+    {
+        $(set_in).removeAttr('style');
+        $(set_in).css('column-gap', window.screen.width*3/100);
+    }
+    else if (set_in == '#develop-content' && window.screen.width < 1168)
+    {
+        $(set_in).removeAttr('style');
+    }
+
     var max = 0;
     if(find_in == '.develop-title' && window.screen.width < 1168) {
         $(find_in).each(function(i){
@@ -277,27 +291,13 @@ function content_height(find_in, set_in){
         })
         $(set_in).css('height', max);
     }
-
-    if (set_in == '#develop-content' && window.screen.width > 1300)
-    {
-        $(set_in).css('column-gap', '70px');
-    }
-    else if (set_in == '#develop-content' && window.screen.width > 1168)
-    {
-        $(set_in).removeAttr('style');
-        $(set_in).css('column-gap', window.screen.width*3/100);
-    }
-    else if (set_in == '#develop-content' && window.screen.width < 1168)
-    {
-        $(set_in).removeAttr('style');
-    }
 }
 
 function develop(){
-    var first = $(".develop-block").length > 1 && window.screen.width < 600;
+    var first = $(".develop-block").length > 1 && window.screen.width <= 600;
     var second = $(".develop-block").length > 2 && window.screen.width < 851;
     var third = $(".develop-block").length > 3 && window.screen.width > 851;
-    var _first = window.screen.width < 600;
+    var _first = window.screen.width <= 600;
     var _second = window.screen.width < 851;
     var _third = window.screen.width > 851;
     $(".back-button-develop").remove();
@@ -374,11 +374,16 @@ function develop(){
             $($(".develop-block").get(i)).css('position', 'reletive');
             $($(".develop-block").get(i)).css('display', 'flex');
             if (_second){
-                if(i % 2 == 0){
-                    $($(".develop-block").get(i)).css('grid-area', '1 / 1 / 2 / 2');
+                if ($(".develop-block").length == 2){
+                    if(i % 2 == 0){
+                        $($(".develop-block").get(i)).css('grid-area', '1 / 1 / 2 / 2');
+                    }
+                    else if (i % 2 == 1){
+                        $($(".develop-block").get(i)).css('grid-area', '1 / 2 / 2 / 3');
+                    }
                 }
-                else if (i % 2 == 1){
-                    $($(".develop-block").get(i)).css('grid-area', '1 / 2 / 2 / 3');
+                else {
+                    $("#develop-content").css('margin', 'auto');
                 }
             }
             else if (_third){
@@ -394,7 +399,8 @@ function develop(){
                     }
                 }
                 else {
-                    $("#develop-content").css('display', 'flex')
+                    $("#develop-content").css('display', 'flex');
+                    $(".develop-block").css('margin', 'auto');
                 }
             }
         })

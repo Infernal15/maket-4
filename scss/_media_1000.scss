@@ -1,0 +1,39 @@
+@media screen and (min-width: 1168px) {
+    .develop{
+        & > .develop-precontent {
+            max-width: 1220px;
+            padding: 0 15px;
+            margin: auto;
+            #develop-content {
+                padding: 0;
+                .develop-block {
+                    max-width: 350px;
+                    .develop-title {
+                        width: max-content;
+                        & > p {
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .develop-block:nth-child(3n+1) {
+                    margin-left: auto;
+                }
+                .develop-block:nth-child(3n+2) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1204px) {
+    .develop-block {
+        margin: 0;
+        .develop-title {
+            & > p {
+                font-size: 22.5px;
+            }
+        }
+    }  
+}

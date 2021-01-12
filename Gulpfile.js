@@ -5,14 +5,6 @@ var sass    = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
-function prefix(){
-  return gulp.src('./css/style.css')
-        .pipe(autoprefixer())
-    .pipe(gulp.dest('style').pipe(browserSync.stream()));
-}
-
-gulp.task('prefix', prefix);
-
 gulp.task('clean', async function(){
   del.sync('dist')
 });
@@ -20,13 +12,14 @@ gulp.task('clean', async function(){
 //---
 function style() {
     //1.where is my scss
-    return gulp.src('./css/scss/*.scss') //gets all files ending with .scss in src/scss
+    return gulp.src('./scss/*.scss') //gets all files ending with .scss in src/scss
     //2. pass that file through sass compiler
     .pipe(sass().on('error',sass.logError))
     //3. where do I save the compiled css file
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./css'));
     //4. stream change to all browsers
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
+  
     prefix();
 }
 //---
@@ -54,9 +47,20 @@ gulp.task('bsync', function () {
     browserSync.reload();
   });
 
-  gulp.watch('./css/scss/*.scss', style);
+  gulp.watch('./scss/*.scss', style);
+
+  prefix();
 });
 
 gulp.task('build', gulp.series('clean'));
 
 gulp.task('default', gulp.series('bsync'));
+
+
+function prefix(){
+  return gulp.src('./css/style.css')
+        .pipe(autoprefixer())
+    .pipe(gulp.dest('./css').pipe(browserSync.stream()));
+}
+
+gulp.task('prefix', prefix);

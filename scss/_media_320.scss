@@ -1,35 +1,3 @@
-@import 'variable';
-
-@font-face{
-    font-family: 'Open Sans Condensed', sans-serif;
-    src: url('../fonts/OpenSansCondensed-Light.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Open Sans Light';
-    src: url('../fonts/OpenSans-Light.ttf');
-}
-
-@font-face{
-    font-family: 'Open Sans Bold';
-    src: url('../fonts/OpenSans-Bold.ttf');
-}
-
-@font-face{
-    font-family: 'Open Sans Regular';
-    src: url('../fonts/OpenSans-Regular.ttf');
-}
-
-@font-face{
-    font-family: 'Open Sans SemiBold';
-    src: url('../fonts/OpenSans-SemiBold.ttf');
-}
-
-@font-face{
-    font-family: 'RobotoCondensed Regular';
-    src: url('../fonts/RobotoCondensed-Regular.ttf');
-}
-
 * {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
@@ -290,133 +258,7 @@ header {
     }
 }
 
-@media screen and (min-width: 851px) {
-    header {
-        menu {
-            height: 100px;
-            padding-top: 11px;
-            div {
-                margin: auto;
-                display: grid;
-                grid-template-columns: 84px 1fr;
-                max-width: 1220px;
-                padding: 0;
-                img {
-                    width: 80px;
-                    height: 80px;
-                }
-                .burger-but {
-                    display: none;
-                }
-                .menu-list {
-                    position: inherit;
-                    top: 0;
-                    grid-area: 1 / 2 / 2 / 3;
-                    display: flex;
-                    ul {
-                        width: 100%;
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        align-items: center;
-                        row-gap: 3.7852%;
-                        li {
-                            padding: 0 1.775%;
-                        }
-                        li:not(#unuse):hover {
-                            background-color: #eee;
-                            a {
-                                color: #337ab7;
-                            }
-                        }
-                        li:not(#unuse){
-                            a {
-                                width: 100%;
-                                height: 100%;
-                                text-align: initial;
-                            }
-                            margin-bottom: 0;
-                        }
-                        li:last-child {
-                            margin-bottom: 1px;
-                            height: 40px;
-                            padding: 0 17.5px;
-                            pointer-events:stroke;
-                        }
-                    }
-                }}
-        }
-        .main-form {
-            margin-top: 100px;
-            & > div {
-                max-width: 1220px;
-                margin: auto;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 150px 215.5px auto;
-                padding-top: 25px;
-                & > div {
-                    grid-area: 2 / 1 / 4 / 2;
-                    display: flex;
-                    flex-direction: column;
-                    .main-form-title {
-                        font-size: 32px;
-                        letter-spacing: 0.037em;
-                        margin-bottom: 20px;
-                    }
-                    .main-form-description {
-                        width: 87%;
-                        font-size: 17px;
-                        letter-spacing: 0.03em;
-                        line-height: 1.9em;
-                    }
-                }
-                & > .form {
-                    margin-top: 0;
-                    padding-right: 0;
-                    grid-area: 1 / 2 / 4 / 3;
-                    .form-title {
-                        text-align: left;
-                        margin-left: 5px;
-                        margin-top: 10px;
-                    }
-                    & > div {
-                        margin-left: 5px;
-                        #name, 
-                        #surname, 
-                        #type, 
-                        #phone, 
-                        #email {
-                            height: 52px;
-                        }
-                        #name:placeholder-shown, 
-                        #surname:placeholder-shown, 
-                        #type:placeholder-shown, 
-                        #phone:placeholder-shown, 
-                        #email:placeholder-shown {
-                            padding-left: 15px;
-                            padding-top: 2px;
-                        }
-                    }
-                    .form-checkbox {
-                        margin-top: 14.5px;
-                        #checkbox {
-                            margin-top: 0;
-                        }
-                        & > p {
-                            font-size: 14px;
-                            margin-top: 0;
-                        }
-                    }
-                    button {
-                        padding: 15px 95px;
-                        margin-left: 6px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-//Курс "Розробка сайтів"
+//Website Development Course
 
 .develop{
     width: 100%;
@@ -424,6 +266,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 15px;
         & > p{
             margin-top: 65px;
             letter-spacing: 0.044em;
@@ -487,131 +330,7 @@ header {
 
 }
 
-@media screen and (min-width: 601px) {
-    .develop{
-        & > .develop-precontent {
-            & > p {
-                font-size: 26.5px;
-            }
-            #develop-content {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 10px;
-                padding: 0 15px;
-            }
-        }
-    }
-
-}
-
-@media screen and (min-width: 851px) {
-    .develop{
-        & > .develop-precontent {
-            & > p {
-                font-size: 31px;
-            }
-            #develop-content {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                margin-top: -12px;
-                column-gap: 5px;
-                padding: 0 15px;
-                margin-top: 20px;
-                margin-left: 2px;
-                .develop-block {
-                    width: auto;
-                    width: auto;
-                    margin-top: 0;
-                    img {
-                        margin-top: 12px;
-                        margin-left: 2px;
-                    }
-                    .develop-title {
-                        margin-top: -1px;
-                        padding-bottom: 15px;
-                        width: max-content;
-                        & > p {
-                            width: auto;
-                            font-size: 19px;
-                            letter-spacing: 0.055em;
-                        }
-                    }
-                    .develop-description {
-                        width: 95%;
-                        padding-top: 27px;
-                        font-size: 15px;
-                        line-height: 1.67em;
-                        margin: 0;
-                        margin-top: 2px;
-                    }
-                }
-            }
-            #develop-button {
-                margin-top: 58px;
-                margin-bottom: 58px;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 852px) {
-    .develop{
-        & > .develop-precontent {
-            #develop-content {
-                .develop-block {
-                    .develop-title {
-                        width: 100%;
-                        & > p {
-                            font-size: 18px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-//1198
-@media screen and (min-width: 1168px) {
-    .develop{
-        & > .develop-precontent {
-            max-width: 1220px;
-            padding: 0 15px;
-            margin: auto;
-            #develop-content {
-                padding: 0;
-                .develop-block {
-                    max-width: 350px;
-                    .develop-title {
-                        width: max-content;
-                        & > p {
-                            font-size: 22px;
-                        }
-                    }
-                }
-                .develop-block:nth-child(3n+1) {
-                    margin-left: auto;
-                }
-                .develop-block:nth-child(3n+2) {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1204px) {
-    .develop-block {
-        margin: 0;
-        .develop-title {
-            & > p {
-                font-size: 22.5px;
-            }
-        }
-    }  
-}
-
-//Курсів проведено
+//Courses are held
 
 .conducted {
     width: 100%;
@@ -621,7 +340,6 @@ header {
     justify-content: center;
     padding-top: 30px;
     div {
-        max-width: 93.75%;
         width: 100%;
         max-height: 265px;
         height: auto;
@@ -629,6 +347,7 @@ header {
         grid-template-columns: 47.33% 53.67%;
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
+        padding: 0 15px;
         div {
             width: auto;
             height: 122px;
@@ -671,53 +390,11 @@ header {
     }
 }
 
-@media screen and (min-width: 851px) {
-    .conducted {
-        height: 310px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0;
-        div {
-            max-width: 1260px;
-            padding: 0 15px;
-            grid-template-columns: repeat(4, 1fr);grid-template-rows: min-content;
-            margin-left: -2px;
-            div {
-                height: auto;
-                margin: 0;//
-                flex-grow: 1;
-                flex-basis: min-content;
-                .conducted-count {
-                    font-size: 27px;
-                    padding-top: 15px;
-                }
-                p:last-child {
-                    font-size: 16px;
-                    margin-top: 10px;
-                }
-            }
-        }
-        div:nth-child(4n + 2)
-        {
-            margin-left: 4px;
-        }
-        div:nth-child(4n + 3)
-        {
-            margin-left: -9px;
-        }
-        div:nth-child(4n)
-        {
-            margin-left: -4px;
-        }
-    }
-}
-
-//Відгуки
+//Reviews
 
 .students-block {
     .students-block-div {
+        padding: 0 15px;
         padding-top: 31px;
         .student-title {
             padding: 0  30px;
@@ -776,58 +453,7 @@ header {
     }
 }
 
-@media screen and (min-width: 851px) {
-    .students-block {
-        max-width: 1220px;
-        margin: auto;
-        .students-block-div {
-            .student-title {
-                margin-top: 34px;
-                font-size: 31px;
-                letter-spacing: 0.076em;
-            }
-            .all-students {
-                margin: auto;
-                max-width: 1060px;
-                .student {
-                    div {
-                        .student-description {
-                            font-size: 20px;
-                            margin-top: 16px;
-                            width: 100%;
-                            line-height: 1.85em;
-                            letter-spacing: 0.048em;
-                        }
-                        .quo{
-                            font-size: 30px;
-                            color: #c4c4c4;
-                            font-family: FontAwesome;
-                            // padding-right: 25px;
-                        }
-                        .quo:last-child {
-                            margin-bottom: 2px;
-                        }
-                    }
-                    .student-name {
-                        margin-top: 29px;
-                        font-size: 19px;
-                        letter-spacing: 0.07em;
-                    }
-                    .student-role {
-                        margin-top: 1px;
-                        font-size: 16px;
-                    }
-                }
-            }
-            #student-button {
-                margin-top: 122px;
-                margin-bottom: 40px;
-            }
-        }
-    }
-}
-
-//Блок з відео
+//Block with video
 
 .video {
     background-color: $background-color-1;
@@ -868,29 +494,7 @@ header {
     }
 }
 
-@media screen and (min-width: 851px) {
-    .video {
-        .video-content {
-            max-width: 1220px;
-            // padding: 0 15px;
-            margin: auto;
-            .video-title {
-                font-size: 33px;
-                margin-top: 70px;
-                letter-spacing: 0.025em;
-            }
-            .video-description {
-                font-size: 18px;
-                line-height: 1.38em;
-            }
-            iframe {
-                margin-top: 30px;
-            }
-        }
-    }
-}
-
-//Блок менторів
+//Block of mentors
 
 .mentors {
     background-color: $background-color-2;
@@ -947,61 +551,7 @@ header {
     }
 }
 
-@media screen and (min-width: 851px) {
-    .mentors {
-        .mentor-content {
-            max-width: 1220px;
-            margin: auto;
-            .mentor-main-title {
-                margin-top: 35px;
-                font-size: 31px;
-                letter-spacing: 0.085em;
-            }
-            #mentor-content{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                .mentor {
-                    display: grid;
-                    grid-template-columns: 337px 1fr;
-                    column-gap: 106px;
-                    padding: 0;
-                    margin-left: 45px;
-                    max-width: 1115px;
-                    align-items: flex-start;
-                    img {
-                        width: 337px;
-                        height: 356px;
-                        margin-top: 1px;
-                    }
-                    & > div {
-                        & > p:first-child + p {
-                            margin-top: 30px;
-                        }
-                        & > p {
-                            text-align: left;
-                            font-size: 16px;
-                            letter-spacing: -0.001em;
-                            line-height: 1.59em;
-                        }
-                        .mentor-name {
-                            text-align: left;
-                            font-size: 20px;
-                            margin-top: 30px;
-                            padding-bottom: 13px;
-                        }
-                    }
-                }
-            }
-            #mentor-button {
-                margin-top: 7px;
-                margin-bottom: 65px;
-            }
-        }
-    }
-}
-
-//Блок карти
+//Block of cards
 
 map {
     & > iframe {
@@ -1010,7 +560,7 @@ map {
     }
 }
 
-//Блок контактної інформації
+//Contact information block
 
 .info {
     background-color: #3498db;
@@ -1049,40 +599,7 @@ map {
     }
 }
 
-@media screen and (min-width: 851px) {
-    .info {
-        height: 197px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .info-content {
-            max-width: 1220px;
-            padding: 0;
-            grid-template-columns: repeat(4, 1fr);
-            height: auto;
-            row-gap: none;
-            justify-content: space-between;
-            .info-content-desc {
-                img {
-                    width: 56px;
-                    height: 50px;
-                    margin-bottom: 20px;
-                }
-                .info-name {
-                    font-size: 17px;
-                    letter-spacing: -0.03em;
-                    font-family: 'Open Sans Bold';
-                }
-                .info-desc {
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-}
-
-//Завершальна частинна footer
+//The final partial footer
 
 .copy {
     background-color: $background-color-1;
@@ -1095,6 +612,7 @@ map {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 15px;
         & > p {
             color: #3498db;
             margin-bottom: 10px;
@@ -1106,27 +624,6 @@ map {
         & > a, & > p {
             font-family: 'Open Sans Light';
             font-size: 14px;
-        }
-    }
-}
-
-@media screen and (min-width: 851px) {
-    .copy {
-        height: 156px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .copy-content {
-            margin: 0;
-            // margin-top: 22px;
-            margin-left: 3px;
-            & > p {
-                margin-bottom: 18px;
-            }
-            & > p::first-letter {
-                padding-right: 5px;
-            }
         }
     }
 }

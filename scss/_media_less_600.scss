@@ -1,0 +1,36 @@
+@media screen and (min-width: 352px) {
+    header {
+        .main-form {
+            & > div {
+                & > .form {
+                    .form-checkbox {
+                        #checkbox {
+                            margin-top: 2px;
+                        }
+                        & > p {
+                            font-size: 14px;
+                            margin-top: -1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .develop{
+        & > .develop-precontent {
+            & > p {
+                font-size: 26.5px;
+            }
+            #develop-content {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 10px;
+                padding: 0 15px;
+            }
+        }
+    }
+
+}
